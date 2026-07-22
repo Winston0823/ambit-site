@@ -1,0 +1,19 @@
+:root{--paper:#FCF9F8;--ink:#1A0B2E;--muted:#6E6774;--royal:#2D005E;--iris:#7C4BB8;--hairline:rgba(124,75,184,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 "Avenir Next","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:64px 24px 96px}
+.brand{font-family:Georgia,serif;font-size:28px;color:var(--royal);text-decoration:none}
+nav{display:flex;gap:20px;align-items:baseline;margin-bottom:56px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--iris)}
+h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;margin-bottom:10px}
+.updated{color:var(--muted);font-size:13px;margin-bottom:32px}
+.lede{font-size:18px;color:var(--muted);margin-bottom:40px;max-width:56ch}
+h2{font-family:Georgia,serif;font-weight:500;font-size:1.35rem;margin:36px 0 10px}
+p{margin-bottom:14px;max-width:65ch}
+ul{margin:0 0 14px 22px}li{margin-bottom:8px}
+a{color:var(--iris)}
+.card{background:#fff;border:1px solid var(--hairline);border-radius:14px;padding:24px 26px;margin:18px 0;box-shadow:0 14px 34px -26px rgba(45,0,94,.4)}
+.card h2{margin-top:0}
+footer{margin-top:72px;padding-top:24px;border-top:1px solid var(--hairline);color:var(--muted);font-size:13px}
+.btn{display:inline-block;background:var(--royal);color:#fff;text-decoration:none;padding:13px 26px;border-radius:999px;font-weight:600;font-size:14px;letter-spacing:.04em}
