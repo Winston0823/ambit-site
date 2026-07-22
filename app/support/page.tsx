@@ -1,6 +1,13 @@
 import { Card, CardContent } from '@heroui/react/card';
 import { Chip } from '@heroui/react/chip';
 import {
+  Alert,
+  AlertContent,
+  AlertDescription,
+  AlertIndicator,
+  AlertTitle,
+} from '@heroui/react/alert';
+import {
   Accordion,
   AccordionHeading,
   AccordionIndicator,
@@ -84,6 +91,18 @@ export default function Support() {
           </CardContent>
         </Card>
       </div>
+
+      <Alert className="rounded-astra mt-8 max-w-2xl border border-hairline bg-lilac/60" status="accent">
+        <AlertIndicator />
+        <AlertContent>
+          <AlertTitle className="font-medium">Safety reports come first</AlertTitle>
+          <AlertDescription className="text-ink-muted">
+            Every report is reviewed within 24 hours. Blocking someone takes
+            effect immediately &mdash; you disappear from each other&apos;s
+            decks and conversations.
+          </AlertDescription>
+        </AlertContent>
+      </Alert>
 
       <section className="mt-16 max-w-2xl">
         <h2 className="font-display text-3xl">Common questions</h2>

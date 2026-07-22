@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { buttonVariants } from '@heroui/styles';
 import { Card, CardContent } from '@heroui/react/card';
 
 const PILLARS = [
@@ -44,14 +45,14 @@ export default function Home() {
         </p>
         <div className="relative mt-10 flex flex-wrap gap-4">
           <Link
+            className={`${buttonVariants({ variant: 'primary', size: 'lg' })} astra-mono rounded-astra bg-royal px-7 text-[12px] text-white shadow-[0_14px_30px_-14px_rgba(45,0,94,0.55)]`}
             href="/support"
-            className="astra-mono rounded-astra inline-flex h-11 items-center bg-royal px-7 text-[12px] text-white shadow-[0_14px_30px_-14px_rgba(45,0,94,0.55)] transition-transform hover:-translate-y-0.5"
           >
             Get support
           </Link>
           <Link
+            className={`${buttonVariants({ variant: 'outline', size: 'lg' })} astra-mono rounded-astra border-hairline px-7 text-[12px] text-royal`}
             href="/privacy"
-            className="astra-mono rounded-astra inline-flex h-11 items-center border border-hairline bg-white/60 px-7 text-[12px] text-royal transition-colors hover:border-royal/40"
           >
             Read the privacy policy
           </Link>
@@ -86,8 +87,8 @@ export default function Home() {
           </p>
         </div>
         <Link
+          className={`${buttonVariants({ variant: 'outline', size: 'lg' })} astra-mono rounded-astra border-royal/30 px-7 text-[12px] text-royal`}
           href="/support"
-          className="astra-mono rounded-astra inline-flex h-11 items-center border border-royal/30 px-7 text-[12px] text-royal transition-colors hover:border-royal"
         >
           Visit support
         </Link>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Separator } from '@heroui/react/separator';
 
 const CONTACT = 'ambitaimail@gmail.com';
 
@@ -30,7 +31,8 @@ export function Footer() {
             </a>
           </nav>
         </div>
-        <p className="mt-12 border-t border-paper/10 pt-6 text-xs">
+        <Separator className="mt-12 bg-paper/10" />
+        <p className="mt-6 text-xs">
           © 2026 Ambit. Made by students, for students.
         </p>
       </div>
